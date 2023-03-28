@@ -1,7 +1,9 @@
+configfile: "config/config.yaml"
+
 rule combine:
     """ create combine .txt file """
     input:
-        expand("resources/{file}", file=COUNT_FILES)
+        expand("resources/{file}", file=config["files"])
     output:
         "results/result.txt"
     shell:

@@ -1,4 +1,4 @@
-COUNT_FILES = ["GSE118028_gene_counts.tsv", "GSE118057_gene_counts.txt"]
+configfile: "config/config.yaml"
 
 include: "rules/combine.smk"
 include: "rules/heatmap.smk"
