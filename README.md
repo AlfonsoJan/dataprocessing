@@ -1,4 +1,4 @@
-# Differentialy Expressed Genes
+# Differentialy Expressed Genes (DEGs)
 
 
 ## Abstract
@@ -14,11 +14,9 @@ Here are links for the public data set with the article that were used.
 
 I want to replicate part of the study. I want to recreate and compare 6 specific figures.
 
-- A heat map illustrating the results of the gene set enrichment analysis of DN3a CD27low versus DN3b cells using gene sets from the hallmark collection of the Molecular Signatures Database (MSigDB). Only sets containing >10 genes and with a false discovery rate (FDR) <5% are illustrated.
-- A heat map displaying the centered gene expression levels of the top 50 significantly overexpressed genes and top 50 significantly under-expressed genes in DN3a CD27low compared with DN3b cells. Genes are clustered using hierarchical clustering.
-- A heat map displaying the centered gene expression levels of the top 10 transcription factors with
-the highest absolute fold change among differentially expressed genes (FDR <0.05) between DN3a CD27low and DN3b cells.
-- A volcano plot of differentially expressed genes between DN3a CD27low and DN3b cells.
-- Normalized log2CPM obtained from the bulk RNA-seq of Duxbl in DN3a CD27high, DN3a CD27low, and DN3b cells.
-- Relative expression obtained by qPCR (F) of Duxbl in DN3a CD27high, DN3a CD27low, and DN3b cells.
+- A heat map displaying the euclidean distances between all the samples.
+- A volcano plot of differentially expressed genes between DN3a CD27low and DN3a CD27high.
+- A MDS plot that displays similarity calculated distances in a 2D-plot.
 
+## Requirements
+R == 4.2
