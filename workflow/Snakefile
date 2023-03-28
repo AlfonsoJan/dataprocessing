@@ -1,0 +1,3 @@
+rule all:
+    shell:
+        "echo hi"
