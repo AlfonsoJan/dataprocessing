@@ -20,3 +20,10 @@ I want to replicate part of the study. I want to recreate and compare 6 specific
 
 ## Requirements
 R == 4.2
+**Packages used in R:**
+- *DESeq2*
+- *pheatmap*
+- *PoiClaClu*
+- *ggplot2*
+- *edgeR*
+- *EnhancedVolcano*
