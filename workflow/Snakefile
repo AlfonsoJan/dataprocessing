@@ -1,3 +1,8 @@
+COUNT_FILES = ["GSE118028_gene_counts.tsv", "GSE118057_gene_counts.txt"]
+
 rule all:
+    """ final rule """
+    input:
+        expand("resources/{file}", file=COUNT_FILES)
     shell:
-        "echo hi"
+        "Rscript scripts/preprocessing.R {input}"
