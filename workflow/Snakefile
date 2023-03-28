@@ -3,6 +3,15 @@ COUNT_FILES = ["GSE118028_gene_counts.tsv", "GSE118057_gene_counts.txt"]
 rule all:
     """ final rule """
     input:
-        expand("resources/{file}", file=COUNT_FILES)
+        "results/heatmap.jpg"
     shell:
-        "Rscript scripts/preprocessing.R {input}"
+        "echo done"
+
+rule heatmap:
+    """ create heatmap jpg """
+    input:
+        expand("resources/{file}", file=COUNT_FILES)
+    output:
+        "results/heatmap.jpg"
+    shell:
+        "Rscript scripts/heatmap.R {input} {output}"
