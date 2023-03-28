@@ -3,10 +3,11 @@ COUNT_FILES = ["GSE118028_gene_counts.tsv", "GSE118057_gene_counts.txt"]
 include: "rules/combine.smk"
 include: "rules/heatmap.smk"
 include: "rules/mds.smk"
+include: "rules/preprocessing.smk"
 
 rule all:
     """ final rule """
     input:
-        "images/mds.jpg"
+        "results/processed_result.txt"
     shell:
         "echo done"
