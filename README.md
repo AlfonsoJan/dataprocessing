@@ -17,7 +17,7 @@ I want to replicate part of the study. I want to recreate and compare 6 specific
 - A MDS plot that displays similarity calculated distances in a 2D-plot.
 
 ## Requirements
-R == 4.2
+R == 4.2  
 **Packages used in R:**
 - *DESeq2*
 - *pheatmap*
