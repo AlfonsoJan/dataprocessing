@@ -4,10 +4,11 @@ include: "rules/combine.smk"
 include: "rules/heatmap.smk"
 include: "rules/mds.smk"
 include: "rules/preprocessing.smk"
+include: "rules/volcanoplot.smk"
 
 rule all:
     """ final rule """
     input:
-        "results/processed_result.txt"
+        "images/volcanoplot.jpg"
     shell:
         "echo done"
